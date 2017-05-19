@@ -1,0 +1,4 @@
+set force_color_prompt yes
+set nobeep
+set path=(/home/chiahsiang/chiahsia/bin $path)
+setenv LS_COLORS 'no=00:fi=00:di=01;36:ln=04;01;36:pi=40;33:so=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=01;32:*.cmd=01;31:*.exe=01;32:*.sh=01;32:*.csh=01;32:*.py=01;33:*.pl=01;33:*.v=01;33:*.sv=01;33:*.h=01;33:*.cpp=01;33:*.c=01;33:*.m=01;33'

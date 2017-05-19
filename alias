@@ -1,0 +1,30 @@
+set history = 500
+set savehist = 200
+set autolist
+set rmstar
+set color
+set colorcat
+
+
+###############################################################################
+# Linux setup
+alias c     'clear'
+alias h     'history'
+alias m     'matlab &'
+alias p     'python3'               # Use python3 instead of the default python2
+alias s     'screen'
+alias t     'tmux'
+alias v     'vim'
+alias w     'which'
+alias pl    'perl'
+alias sp    'setup_project'
+alias vi    'vim'
+alias ls    'ls --color=auto'
+alias grep  'grep --color=auto'
+alias cp    'cp -i'
+alias rm    'rm -i'
+alias py    'python3'
+alias ..	'cd ..'
+alias ...	'cd ../..'
+
+
