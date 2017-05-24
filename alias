@@ -12,7 +12,7 @@ alias c     'clear'
 alias h     'history'
 alias m     'matlab &'
 alias p     'python3'               # Use python3 instead of the default python2
-alias s     'screen'
+#alias s     'screen'
 alias t     'tmux'
 alias v     'vim'
 alias w     'which'
