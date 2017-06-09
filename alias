@@ -6,14 +6,18 @@ set color
 set colorcat
 
 
+alias ssh="ssh -i ~/.ssh/csg"
+alias ssx="ssh -X -C -i ~/.ssh/csg"
+alias ="ssx $vm"
 ###############################################################################
 # Linux setup
 alias c     'clear'
 alias h     'history'
 alias m     'matlab &'
 alias p     'python3'               # Use python3 instead of the default python2
-#alias s     'screen'
+#alias s     'screen'               # moving to tmux from screen 
 alias t     'tmux'
+alias ta    'tmux a'
 alias v     'vim'
 alias w     'which'
 alias pl    'perl'
@@ -21,10 +25,14 @@ alias sp    'setup_project'
 alias vi    'vim'
 alias ls    'ls --color=auto'
 alias grep  'grep --color=auto'
-alias cp    'cp -i'
+alias diff  'diff -B -w'
+alias cp	'cp -i --preserve=mode,timestamps'
 alias rm    'rm -i'
-alias py    'python3'
+alias py    'python3'              # overwritten the default python2.6
 alias ..	'cd ..'
 alias ...	'cd ../..'
+alias ....	'cd ../../..'
+alias rv    'run_vcs'
+alias rw    'run_wvpd'
 
 

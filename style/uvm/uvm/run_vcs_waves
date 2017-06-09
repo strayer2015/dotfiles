@@ -1,0 +1,23 @@
+#!/usr/bin/csh
+## by Chia-Hsiang Chen, March 2015
+
+if ($#argv == 0 )then
+    echo "Please enter inputs: (1) testbench file, (2) ext (option)"
+else
+    #rm -rf simv_$2 simv_$2.*
+    vcs -R +v2k +vc -sverilog +vcs+lic+wait\
+        +lint=PCWM  \
+        -timescale=1ns/1ps \
+        +define+WAVEDUMP \
+        +plusarg_save \
+        -full64 \
+        +memcbk \
+        +vpdfile+$2.vpd \
+        +vcs+vcdpluson \
+        +sdfverbose \
+        +overlap    \
+        +libext_.v+.vh \
+        $3 \
+        $1
+endif
+
