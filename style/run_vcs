@@ -1,0 +1,17 @@
+#!/bin/csh
+# vcs run command
+if ($#argv == 0 )then
+    echo "Please enter inputs: (1) testbench file, (2) -gui (optional)"
+else
+    vcs -R +v2k +vc -sverilog +vcs+lic+wait\
+        +lint=PCWM  \
+        -timescale=1ns/1ps \
+        -debug_all \
+        -full64 \
+        +overlap    \
+        +libext_.v+.vh \
+        $2 $1 \
+        +lint=TFIPC-L
+
+endif
+

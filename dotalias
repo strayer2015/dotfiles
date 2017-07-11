@@ -14,6 +14,7 @@ alias ="ssx $vm"
 alias c     'clear'
 alias h     'history'
 alias m     'matlab &'
+alias m_cmd 'matlab -nodisplay -nosplash -nodesktop -r' # example: m_cmd "run('ML');"
 alias p     'python3'               # Use python3 instead of the default python2
 #alias s     'screen'               # moving to tmux from screen 
 alias t     'tmux'
@@ -24,6 +25,7 @@ alias pl    'perl'
 alias sp    'setup_project'
 alias vi    'vim'
 alias ls    'ls --color=auto'
+alias ll    'ls -l'
 alias grep  'grep --color=auto'
 alias diff  'diff -B -w'
 alias cp	'cp -i --preserve=mode,timestamps'
@@ -36,3 +38,6 @@ alias rv    'run_vcs'
 alias rw    'run_wvpd'
 
 
+alias ssh   'ssh -i /home/usr/.ssh/csg'
+  alias xbig   'xrandr -s 2'
+  alias xsml   'xrandr -s 11'

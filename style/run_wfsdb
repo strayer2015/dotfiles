@@ -1,0 +1,27 @@
+#!/bin/csh
+## by Chia-Hsiang Chen, April 2017
+
+setenv NOVAS_HOME
+setenv LD_LIBRARY_PATH
+setenv NOVAS_FSDB_MDA 1
+#set date=`date | awk '{print \$2_"_"\$3_"_"\$6}'`
+if ($#argv == 0 )then
+    echo "Please enter inputs: (1) testbench file, (2) ext (option)"
+else
+    vcs -R -full64 \
+        -debug_pp \
+        +v2k +vc -sverilog +vcs+lic+wait\
+        +lint=PCWM  \
+        -timescale=1ns/1ps \
+        +plusarg_save \
+        +dumpFSDB \
+        +memcbk \
+        +vpi +vcsd \
+        +sdfverbose \
+        +overlap \
+        +libext_.v+.vh \
+	    -P ${NOVAS_HOME}/share/PLI/VCS/linux64/novas.tab ${NOVAS_HOME}/share/PLI/VCS/linux64/pli.a \
+        +fsdbfile+./fsdb/$2.fsdb \
+        $1
+endif
+
