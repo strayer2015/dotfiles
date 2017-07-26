@@ -22,6 +22,7 @@ alias ta    'tmux a'
 alias v     'vim'
 alias w     'which'
 alias pl    'perl'
+alias psub  'perl -p -i.bak -w -e'
 alias sp    'setup_project'
 alias vi    'vim'
 alias ls    'ls --color=auto'
@@ -39,5 +40,10 @@ alias rw    'run_wvpd'
 
 
 alias ssh   'ssh -i /home/usr/.ssh/csg'
-  alias xbig   'xrandr -s 2'
-  alias xsml   'xrandr -s 11'
+if ($HOST =~ locla-* || $HOST =~ a-*) then
+  alias xl   'xrandr -s 2'
+  alias xs   'xrandr -s 11'
+else
+  alias xl   'xrandr -s 2'
+  alias xs   'xrandr -s 11'
+endif
