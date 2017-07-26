@@ -1,1 +1,13 @@
-/Users/chia-hsiangchen/Linux/sc/vim_cheatsheet
+
+                        Scroll
+     (up, down)     : ctrl+U, ctrl+D
+(forward, backward) : ctrl+F, ctrl+B
+(screen move u, d)  : ctrl+E, ctrl+Y
+(high, middle, low) : H, M, L
+
+
+                        Add/paste
+New line above, below   : O, o
+Paste line above, below : P, p
+insert bol, eol         : I, A
+insert bom, eom         : i, a
