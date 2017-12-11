@@ -1,0 +1,4 @@
+sig[4*WL-1 -:BW] to get sig[4*WL-1:4*WL-BW]
+
+sig!=0  as |sig
+
