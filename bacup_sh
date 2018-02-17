@@ -1,0 +1,19 @@
+#!/bin/csh
+
+set timestamp = `date | sed "s/ /./g"`
+
+mkdir bak
+mkdir bak/$timestamp
+
+cd uwb_rx
+set list = `ls uwb_rx* -d`
+cd ..
+
+foreach mod ($list)
+    # echo $mod
+    mkdir bak/$timestamp/$mod
+    # ls uwb_rx/$mod/rtl/*.v
+    # ls bak/$timestamp/$mod
+    echo "cp -rp uwb_rx/$mod/rtl/*.v bak/$timestamp/$mod"
+    cp -rp uwb_rx/$mod/rtl/*.v bak/$timestamp/$mod
+end
