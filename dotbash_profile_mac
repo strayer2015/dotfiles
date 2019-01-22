@@ -7,12 +7,24 @@ export DISPLAY=:0
 # 1(directory) 2(symbolic link) 3(socket) 4(pipe) 5(executable) 6(block special) 7(character special) 8(executable with setuid bit set) 9(executable with setgid bit set) 10(directory writable to others, with sticky bit) 11(directory writable to others without stiky bit)
 # a=black, b=red, c=green d=brown, e=blue, f=magenta, g=cyan, h=light grey
 
+
+alias ssx="ssh -AY -C -i ~/.ssh/csg"
+export vm="chiahsiang@
+alias ="ssx $vm"
+alias ..="cd ../"
+alias ...="cd ../../"
+alias ....="cd ../../../"
+alias .....="cd ../../../../"
+alias ......="cd ../../../../../"
+
 export FIGNORE=.DS_STORE
 alias o=open
 alias vnc="open /Applications/VNC\ Viewer.app"
-alias p="python3.6"
+alias p="python3.7"
+
+
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 export PATH
