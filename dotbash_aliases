@@ -1,0 +1,9 @@
+alias vi='vim'
+
+alias ssx='ssh -AY -C -i /home/vagrant/.ssh/id_rsa'
+alias vm=''
+alias ='ssx $vm'
+alias ..='cd ../'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'

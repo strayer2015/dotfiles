@@ -6,8 +6,8 @@ set color
 set colorcat
 
 
-alias ssh="ssh -i ~/.ssh/csg"
-alias ssx="ssh -X -C -i ~/.ssh/csg"
+alias ssh="ssh -i ~/.ssh/id_rsa"
+alias ssx="ssh -X -C -i ~/.ssh/id_rsa"
 alias ="ssx $vm"
 ###############################################################################
 # Linux setup
@@ -33,13 +33,14 @@ alias cp	'cp -i --preserve=mode,timestamps'
 alias rm    'rm -i'
 alias py    'python3'              # overwritten the default python2.6
 alias ..	'cd ..'
-alias ...	'cd ../..'
-alias ....	'cd ../../..'
+alias ...	'cd ../../'
+alias ....	'cd ../../../'
+alias .....	'cd ../../../../'
 alias rv    'run_vcs'
 alias rw    'run_wvpd'
 
 
-alias ssh   'ssh -i /home/usr/.ssh/csg'
+alias ssh   'ssh -i /home/usr/.ssh/id_rsa'
 if ($HOST =~ locla-* || $HOST =~ a-*) then
   alias xl   'xrandr -s 2'
   alias xs   'xrandr -s 11'
