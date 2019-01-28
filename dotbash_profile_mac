@@ -8,14 +8,15 @@ export DISPLAY=:0
 # a=black, b=red, c=green d=brown, e=blue, f=magenta, g=cyan, h=light grey
 
 
-alias ssx="ssh -AY -C -i ~/.ssh/csg"
-export vm="chiahsiang@
+alias ssx="ssh -AY -C -i ~/.ssh/id_rsa"
+export vm="chiahsiang@scv-chiahsiang01.csg.apple.com"
 alias ="ssx $vm"
 alias ..="cd ../"
 alias ...="cd ../../"
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
 alias ......="cd ../../../../../"
+alias linux="cd ~/Ubuntu/Xenial; vagrant ssh"
 
 export FIGNORE=.DS_STORE
 alias o=open
