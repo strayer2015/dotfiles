@@ -9,8 +9,6 @@ export DISPLAY=':11.0'
 
 
 alias ssx="ssh -AY -C -i ~/.ssh/id_rsa"
-export vms="chiahsiang@scv-chiahsiang01.csg.apple.com"
-export vma="chiahsiang@aus-chiahsiang01.csg.apple.com"
 alias ="ssx $vms"
 alias ="ssx $vma"
 alias ..="cd ../"
