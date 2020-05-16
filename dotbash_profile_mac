@@ -2,15 +2,17 @@
 export CLICOLOR=1
 export LSCOLORS=gxdxcxdxcxegedabagaced
 #export DISPLAY='<ip_address>:11.0'
-#export DISPLAY=':0.0'
-export DISPLAY=:0
+export DISPLAY=':11.0'
+#export DISPLAY=:10.0
 # 1(directory) 2(symbolic link) 3(socket) 4(pipe) 5(executable) 6(block special) 7(character special) 8(executable with setuid bit set) 9(executable with setgid bit set) 10(directory writable to others, with sticky bit) 11(directory writable to others without stiky bit)
 # a=black, b=red, c=green d=brown, e=blue, f=magenta, g=cyan, h=light grey
 
 
 alias ssx="ssh -AY -C -i ~/.ssh/id_rsa"
-export vm="chiahsiang"
-alias ="ssx $vm"
+export vms="chiahsiang@scv-chiahsiang01.csg.apple.com"
+export vma="chiahsiang@aus-chiahsiang01.csg.apple.com"
+alias ="ssx $vms"
+alias ="ssx $vma"
 alias ..="cd ../"
 alias ...="cd ../../"
 alias ....="cd ../../../"
@@ -18,15 +20,23 @@ alias .....="cd ../../../../"
 alias ......="cd ../../../../../"
 alias linux="cd ~/Ubuntu/Xenial; vagrant ssh"
 alias ta="tmux a"
+alias tav="tmux a -t v"
+alias matlab="/Applications/MATLAB_R2018b.app/bin/matlab"
+alias m="matlab"
 
 export FIGNORE=.DS_STORE
 alias o=open
 alias vnc="open /Applications/VNC\ Viewer.app"
-alias p="python3.7"
+alias p="python3.6"
 
 
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
-PATH="/Users/chiahsiang/Library/Python/3.7/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+#PATH="/Users/chiahsiang/Library/Python/3.7/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+#export PATH
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
