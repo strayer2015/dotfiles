@@ -8,6 +8,8 @@ export DISPLAY=':11.0'
 # a=black, b=red, c=green d=brown, e=blue, f=magenta, g=cyan, h=light grey
 
 
+export vms="chiahsiang@scv-chiahsiang01.csg.apple.com"
+export vma="chiahsiang@aus-chiahsiang01.csg.apple.com"
 alias ssx="ssh -AY -C -i ~/.ssh/id_rsa"
 alias ="ssx $vms"
 alias ="ssx $vma"

@@ -1,10 +1,14 @@
 "[.vimrc]
+":h option-list
+":options
+":color ctrl+D
     version 7.0
     set nocompatible
 "[ editing ]
     set shiftwidth=4
     set tabstop=4
     set autoindent
+    set smartindent
     set expandtab
     "set smartindent
     "set bs=2
@@ -19,11 +23,21 @@
 "[ misc ]
     set showmatch
     set showmode
-    set history=50
+    set history=1000
+    set wildmenu
+    set scrolloff=4
+    set hlsearch
+    set incsearch
+    set ignorecase
+    set smartcase
+    set hidden
+    "set backup
+    "set bex=SOMETHING
 "[ syntax ]
     "set syntax=c
     syntax on
 
+    au BufNewFile,BufRead *.svp set filetype=v
     au BufNewFile,BufRead *.sv set filetype=v
     au BufNewFile,BufRead *.v set filetype=v
 "[ ruler ]
@@ -40,7 +54,6 @@
     set laststatus=2
     "set statusline
 
-    set hlsearch
     highlight comment ctermfg=cyan
     highlight search ctermbg=yellow
     highlight search ctermfg=black
@@ -63,5 +76,11 @@
 " bind K to grep word under cursor
     nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
+"map KEY KEYSTROKE
+"let mapleader="\" default map leader key
+"verilog style
+map <leader>c A<CR>always_comb begin<CR><CR>end<CR><Esc>kki<tab>
+map <leader>f A<CR>always_ff@(posedge clk) begin<CR><CR>end<CR><Esc>kki<tab>
 
 
+"command VEX  !vexpand %
