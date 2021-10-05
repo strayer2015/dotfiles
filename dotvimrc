@@ -3,6 +3,7 @@
 ":options
 ":color ctrl+D
     version 7.0
+    set wildmenu
     set nocompatible
 "[ editing ]
     set shiftwidth=4
@@ -10,7 +11,8 @@
     set autoindent
     set smartindent
     set expandtab
-    "set smartindent
+
+    set smarttab
     "set bs=2
     set backspace=indent,eol,start
     ":fixdel
@@ -57,11 +59,15 @@
     highlight comment ctermfg=cyan
     highlight search ctermbg=yellow
     highlight search ctermfg=black
-    highlight ColorColumn ctermbg=cyan
-    "set cc=80
+    highlight ColorColumn ctermbg=red
+    call matchadd('ColorColumn', '\%81v', 100)
     set vb
 
 
+"[ open to the same line when last open ]
+    if has("autocmd")
+        au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+    endif
 " The Silver Searcher
     if executable('ag')
         " Use ag over grep
@@ -82,5 +88,3 @@
 map <leader>c A<CR>always_comb begin<CR><CR>end<CR><Esc>kki<tab>
 map <leader>f A<CR>always_ff@(posedge clk) begin<CR><CR>end<CR><Esc>kki<tab>
 
-
-"command VEX  !vexpand %
