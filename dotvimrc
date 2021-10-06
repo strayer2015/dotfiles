@@ -3,14 +3,13 @@
 ":options
 ":color ctrl+D
     version 7.0
-    set wildmenu
     set nocompatible
 "[ editing ]
     set shiftwidth=4
     set tabstop=4
     set autoindent
     set smartindent
-    set expandtab
+    set expandtab "retab
 
     set smarttab
     "set bs=2
@@ -38,7 +37,7 @@
 "[ syntax ]
     "set syntax=c
     syntax on
-
+    "autocmd-defie 
     au BufNewFile,BufRead *.svp set filetype=v
     au BufNewFile,BufRead *.sv set filetype=v
     au BufNewFile,BufRead *.v set filetype=v

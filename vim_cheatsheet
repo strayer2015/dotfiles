@@ -1,13 +1,22 @@
 
-                        Scroll
+----------- Movement --------------
      (up, down)     : ctrl+U, ctrl+D
 (forward, backward) : ctrl+F, ctrl+B
 (screen move u, d)  : ctrl+E, ctrl+Y
 (high, middle, low) : H, M, L
 
+z + enter
 
+----------- del/put/yank -----------
                         Add/paste
 New line above, below   : O, o
 Paste line above, below : P, p
 insert bol, eol         : I, A
 insert bom, eom         : i, a
+
+----------- regs -------------------
+unnamed reg ""
+numbered reg "0, "0-"9
+named reg "a-z
+append to reg "A-Z (capital)
+blackhole reg "_ (don't keep the cut/del into reg)
