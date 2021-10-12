@@ -1,4 +1,4 @@
-
+https://www.cmrr.umn.edu/~strupp/vim-3.0.refcard.html
 ----------- Movement --------------
      (up, down)     : ctrl+U, ctrl+D
 (forward, backward) : ctrl+F, ctrl+B
@@ -20,3 +20,51 @@ numbered reg "0, "0-"9
 named reg "a-z
 append to reg "A-Z (capital)
 blackhole reg "_ (don't keep the cut/del into reg)
+
+----------- cursor insert/movement
+^ - move to bol
+I, i - insert
+A, a - append
+O, o
+80i-
+R, r (one character only)
+C, c - change
+
+J: join with space
+gJ: join with no space
+
+----------- lower/upper case
+~: switch lower/upper case
+g~W
+g~$
+g~~
+
+U: pair with G to make all word upper case
+gUw
+u: lower case
+guu
+
+----------- search
+linewise: 
+    f'char (forward) F'char(backward) ;(repeat) ,(opposite direction)
+    t'char (forward) T'char(backward)
+    !!! combine this with d command
+    / forward search
+    ? backward search
+use
+    d/word to delete till this word
+    "ay/word
+    s/old/new = s#old#new
+
+----------- text object
+W word
+S sentence
+p paragraph
+diw/daw (a word) (inner word); daw=dW
+das/dis
+ci)
+ci]
+ci}
+di>
+
+

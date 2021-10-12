@@ -3,7 +3,7 @@ if exists("b:current_syntax")
 	finish
 endif
 
-"let b:current_syntax = "systemverilog"
+let b:current_syntax = "systemverilog"
 
 syntax keyword svTodo TODO contained
 syntax match svLineComment "//.*" contains=svTodo
