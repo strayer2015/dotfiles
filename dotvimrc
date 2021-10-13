@@ -84,6 +84,4 @@
 "map KEY KEYSTROKE
 "let mapleader="\" default map leader key
 "verilog style
-map <leader>c A<CR>always_comb begin<CR><CR>end<CR><Esc>kki<tab>
-map <leader>f A<CR>always_ff@(posedge clk) begin<CR><CR>end<CR><Esc>kki<tab>
 

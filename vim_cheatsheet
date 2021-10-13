@@ -67,4 +67,19 @@ ci]
 ci}
 di>
 
+----------- macro - sequence repeat
+q+reg to record
+@reg to repeat
+@@ repeat the most recent
+macro practice
+1. normalize the position
+    - type 0
+2. perform edits & operations
+3. position the cursor for easy replay
+    - type j
+repeat macro:
+line1,line2normal @reg
 
+put macro in vimrc:
+let @c = 'oalways_comb beginendko	€ýa'
+let @s = 'oalways_ff@(posedge clk) beginendko	€ýa'

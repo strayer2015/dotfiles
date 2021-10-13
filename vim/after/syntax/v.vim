@@ -84,4 +84,6 @@ HiLink verilogAssertion       Include
 
 delcommand HiLink
 
+let @c = 'oalways_comb beginendko	ýa'
+let @s = 'oalways_ff@(posedge clk) beginendko	ýa'
 let b:current_syntax = "v"
