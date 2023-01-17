@@ -9,8 +9,6 @@ export DISPLAY=':11.0'
 
 
 alias ssx="ssh -AY -C -i ~/.ssh/id_rsa"
-alias ="ssx $vms"
-alias ="ssx $vma"
 alias ..="cd ../"
 alias ...="cd ../../"
 alias ....="cd ../../../"
@@ -25,7 +23,7 @@ alias m="matlab"
 export FIGNORE=.DS_STORE
 alias o=open
 alias vnc="open /Applications/VNC\ Viewer.app"
-alias p="python3.6"
+#alias p="python3.6"
 
 
 
@@ -36,5 +34,5 @@ alias p="python3.6"
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+#PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH

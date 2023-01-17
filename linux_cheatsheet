@@ -1,0 +1,36 @@
+################################################################################
+commands, terminal, shell
+ex. date, cal, date -u
+
+manual 
+sec 1:  user commands
+sec 2: system calls
+sec 3: C lib functions
+sec 4: devices and special files
+sec 5: file format and convenions
+sec 6: games
+sec 7: misc
+sec 8: system admin
+
+tty to show which terminal
+cat < in.txt > /dev/pts/1
+################################################################################
+powerful linux command piping
+
+                  -----------
+standard in < 0 ->|         | -> std out        1> out.txt  1>> out_append.txt
+command arg     ->| command | -> std error      2> err.txt  2>> err_append.txt
+                  -----------
+cat 0< in.txt 1> out.txt
+
+date | cut -d " " -f 1      #-d: --delimiter; -f: --fields
+
+###standard output to xarg input
+date | xargs echo
+
+cat powertoget.txt | xargs
+################################################################################
+file system
+
+################################################################################
+auto scheduling
