@@ -4,13 +4,12 @@
 ":color ctrl+D
     version 7.0
     set nocompatible
-"[ editing ]
+" editing mode
     set shiftwidth=4
     set tabstop=4
     set autoindent
     set smartindent
     set expandtab "retab
-
     set smarttab
     "set bs=2
     set backspace=indent,eol,start
@@ -22,11 +21,12 @@
     set encoding=utf-8
     filetype indent on
 "[ misc ]
-    set showmatch
     set showmode
     set history=1000
     set wildmenu
     set scrolloff=4
+" search options
+    set showmatch
     set hlsearch
     set incsearch
     set ignorecase
@@ -34,15 +34,16 @@
     set hidden
     "set backup
     "set bex=SOMETHING
-"[ syntax ]
+" syntax
     "set syntax=c
     syntax on
     "autocmd-defie 
     au BufNewFile,BufRead *.svp set filetype=v
     au BufNewFile,BufRead *.sv set filetype=v
     au BufNewFile,BufRead *.v set filetype=v
-"[ ruler ]
+" show the cursor position
     set ruler
+" show incomplete command
     set showcmd
 
 "[ status ]
@@ -62,6 +63,8 @@
     call matchadd('ColorColumn', '\%81v', 100)
     set vb
 
+" ctrlp
+    set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 "[ open to the same line when last open ]
     if has("autocmd")
@@ -82,6 +85,7 @@
     nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 "map KEY KEYSTROKE
+"map <leader>w: w!<CR> 
 "let mapleader="\" default map leader key
 "verilog style
 

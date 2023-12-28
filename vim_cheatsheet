@@ -1,5 +1,6 @@
 https://www.cmrr.umn.edu/~strupp/vim-3.0.refcard.html
 ----------- Movement --------------
+(back&forth)        : ctrl+i, ctrl+o
      (up, down)     : ctrl+U, ctrl+D
 (forward, backward) : ctrl+F, ctrl+B
 (screen move u, d)  : ctrl+E, ctrl+Y
@@ -15,11 +16,13 @@ insert bol, eol         : I, A
 insert bom, eom         : i, a
 
 ----------- regs -------------------
+command mode: reg to see register
 unnamed reg ""
 numbered reg "0, "0-"9
 named reg "a-z
-append to reg "A-Z (capital)
+append to existing reg "A-Z (capital)
 blackhole reg "_ (don't keep the cut/del into reg)
+tip: use blackhole before yank/delete 
 
 ----------- cursor insert/movement
 ^ - move to bol
@@ -45,8 +48,9 @@ u: lower case
 guu
 
 ----------- search
+https://www.udemy.com/course/vim-commands-cheat-sheet/learn/lecture/6521626#overview:
 linewise: 
-    f'char (forward) F'char(backward) ;(repeat) ,(opposite direction)
+    f'char (forward) F'char(backward) ; to repeat ,(opposite direction)
     t'char (forward) T'char(backward)
     !!! combine this with d command
     / forward search
@@ -62,9 +66,11 @@ S sentence
 p paragraph
 diw/daw (a word) (inner word); daw=dW
 das/dis
-ci)
+ci) or cib (b=block)
 ci]
 ci}
+c$ = C
+d$ = D
 di>
 
 ----------- macro - sequence repeat
