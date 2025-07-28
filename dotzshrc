@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 export CLICOLOR=1
 export LSCOLORS=gxdxcxdxcxegedabagaced
 #export DISPLAY='<ip_address>:11.0'
@@ -14,26 +14,13 @@ alias ...="cd ../../"
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
 alias ......="cd ../../../../../"
-alias linux="cd ~/Ubuntu/Xenial; vagrant ssh"
+#alias linux="cd ~/Ubuntu/Xenial; vagrant ssh"
 alias ta="tmux a"
 alias tav="tmux a -t v"
-alias matlab="/Applications/MATLAB_R2018b.app/bin/matlab"
-alias m="matlab"
+#alias matlab="/Applications/MATLAB_R2018b.app/bin/matlab"
+#alias m="matlab"
 
 export FIGNORE=.DS_STORE
 alias o=open
-alias vnc="open /Applications/VNC\ Viewer.app"
-#alias p="python3.6"
 
 export PATH=~/.npm-global/bin:$PATH
-
-
-# Setting PATH for Python 3.6
-# The original version is saved in .bash_profile.pysave
-#PATH="/Users/chiahsiang/Library/Python/3.7/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
-#export PATH
-
-# Setting PATH for Python 3.6
-# The original version is saved in .bash_profile.pysave
-#PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-export PATH
