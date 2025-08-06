@@ -1,0 +1,117 @@
+Initial Setup
+    Configure user info (run once globally):
+        git config --global user.name "Your Name"
+        git config --global user.email "your.email@example.com"
+    Check config settings:
+        git config --list
+
+Repository Basics
+    Initialize a new Git repository:
+        git init
+    Clone a remote repository:
+        git clone <repository-url>
+    Check repository status (staged, unstaged, untracked files):
+        git status
+
+Staging and Committing
+    Add files to staging (track changes):
+        git add <file>
+        git add .  # Add all changed files
+    Commit staged changes with a message:
+        git commit -m "Commit message"
+    Add and commit all tracked files in one step:
+        git commit -am "Commit message"
+
+Branching
+    List all branches (current branch marked with *):
+        git branch
+    Create a new branch:
+        git branch <branch-name>
+    Switch to a branch:
+        git checkout <branch-name>
+    Create and switch to a new branch:
+        git checkout -b <branch-name>
+
+    Merge a branch into the current branch:
+        git merge <branch-name>
+    Delete a branch (after merging):
+        git branch -d <branch-name>
+
+Remote Repositories
+    Add a remote repository:
+        git remote add origin <repository-url>
+    View remote repositories:
+        git remote -v
+
+    Push local branch to remote:
+        git push origin <branch-name>
+    Pull changes from remote (fetch + merge):
+        git pull origin <branch-name>
+
+    Fetch remote changes without merging:
+        git fetch origin
+
+Viewing History
+    Show commit history (most recent first):
+        git log
+    Show concise commit history:
+        git log --oneline
+    Show changes in files:
+        git diff
+    Show changes for a specific commit:
+        git show <commit-hash>
+
+Undoing Changes
+    Unstage a file (keep changes):
+        git restore --staged <file>
+    Discard changes in a file (untracked changes):
+        git restore <file>
+    Amend the last commit (e.g., change message or add files):
+        git commit --amend
+    Revert a specific commit (creates a new commit undoing changes):
+        git revert <commit-hash>
+    Reset to a previous commit (discard commits after):
+        git reset --hard <commit-hash>
+
+Stashing
+    Save uncommitted changes temporarily:
+        git stash
+    List stashed changes:
+        git stash list
+    Apply and remove the latest stash:
+        git stash pop
+    Apply a specific stash:
+        git stash apply stash@{n}
+
+Tagging
+    Create a tag for a specific commit:
+        git tag <tag-name> <commit-hash>
+    Push tags to remote:
+        git push origin --tags
+    List tags:
+        git tag
+
+Rebasing
+    Rebase current branch onto another (rewrites history):
+        git rebase <branch-name>
+    Interactive rebase to edit commits:
+        git rebase -i <commit-hash>
+
+Common Workflows
+    Start working on a new feature:
+        git checkout -b feature-branch
+        git add .
+        git commit -m "Add feature"
+        git push origin feature-branch
+
+Resolve merge conflicts:
+    Run git merge or git pull and see conflict markers.
+    Edit files to resolve conflicts.
+        git add <file>
+        git commit (or continue rebase with git rebase --continue).
+
+Tips
+    Always write clear, concise commit messages.
+    Use .gitignore to exclude files (e.g., node_modules, .env).
+
+Run git help <command> for detailed documentation.
