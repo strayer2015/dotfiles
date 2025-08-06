@@ -7,20 +7,21 @@ export DISPLAY=':11.0'
 # 1(directory) 2(symbolic link) 3(socket) 4(pipe) 5(executable) 6(block special) 7(character special) 8(executable with setuid bit set) 9(executable with setgid bit set) 10(directory writable to others, with sticky bit) 11(directory writable to others without stiky bit)
 # a=black, b=red, c=green d=brown, e=blue, f=magenta, g=cyan, h=light grey
 
-
 alias ssx="ssh -AY -C -i ~/.ssh/id_rsa"
 alias ..="cd ../"
 alias ...="cd ../../"
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
 alias ......="cd ../../../../../"
-#alias linux="cd ~/Ubuntu/Xenial; vagrant ssh"
+alias .......="cd ../../../../../../"
 alias ta="tmux a"
 alias tav="tmux a -t v"
+alias v="vim"
+alias p="python3"
 #alias matlab="/Applications/MATLAB_R2018b.app/bin/matlab"
 #alias m="matlab"
 
 export FIGNORE=.DS_STORE
 alias o=open
 
-export PATH=~/.npm-global/bin:$PATH
+#export PATH=~/.npm-global/bin:$PATH
